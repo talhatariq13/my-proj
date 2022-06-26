@@ -29,6 +29,6 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     - name: Grant executacle permissions to gradlew
-    - run: chmod +w gradlew
+      run: chmod +w gradlew
     - name: Build with Gradle
       uses: ./gradlew build
