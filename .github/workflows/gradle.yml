@@ -35,3 +35,11 @@ jobs:
       uses: gradle/gradle-build-action@v2
       with:
         arguments: build
+
+    - name: build and push docker image
+      uses: docker/build-push-action@v3
+      with:
+        image: 36367266/learning_repo
+        registry: docker.io
+        username: ${{secrets.DOCKER_USERNAME}}
+        tags: ${{secrets.DOCKER_PASSWORD}}
