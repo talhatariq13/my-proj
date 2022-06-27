@@ -42,4 +42,4 @@ jobs:
         image: 36367266/learning_repo
         registry: docker.io
         username: ${{secrets.DOCKER_USERNAME}}
-        tags: ${{secrets.DOCKER_PASSWORD}}
+        password: ${{secrets.DOCKER_PASSWORD}}
