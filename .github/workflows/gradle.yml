@@ -55,8 +55,8 @@ jobs:
       name: Build and push
       uses: docker/build-push-action@v3
       with:
-          image: 36367266/learning_repo
-          registry: docker.io
+          # image: 36367266/learning_repo
+          # registry: docker.io
           push: true
           tags: user/app:latest
 
