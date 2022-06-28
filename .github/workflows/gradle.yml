@@ -55,7 +55,7 @@ jobs:
       name: Build and push
       uses: docker/build-push-action@v3
       with:
-          context: ${{ secrets.DOCKER_USERNAME }}/learning_repo
+          context: talhatariq1001@gmail.com/learning_repo
           push: true
           tags: user/app:latest
 
